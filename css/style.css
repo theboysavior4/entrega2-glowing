@@ -1,56 +1,67 @@
-/* style.css */
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 1rem;
-    background-color: #f9f6f1;
-    color: #333;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  h1 {
-    color: #aa5353;
-  }
-  
-  main {
-    max-width: 600px;
-    margin: auto;
-  }
-  
-  .intro {
-    margin-bottom: 1rem;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-  
-  form {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  button {
-    background-color: #aa5353;
-    color: white;
-    border: none;
-    padding: 0.75rem;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #resultado {
-    margin-top: 2rem;
-    background-color: #e7e1d8;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f3f3;
+}
+
+header {
+  background-color: #aa5353;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  flex: 2;
+}
+
+.tarjeta {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carrito {
+  flex: 1;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+button {
+  background-color: #aa5353;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8b4343;
+}

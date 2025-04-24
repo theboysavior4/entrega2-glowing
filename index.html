@@ -1,45 +1,29 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simulador - Glowing Stitches</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Carrito de Glowing Stitches</title>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <header>
-    <h1>Simulador de Proyecto - Glowing Stitches</h1>
+    <h1>Simulador de Compra - Glowing Stitches</h1>
   </header>
 
   <main>
-    <section class="intro">
-      <p>Armá tu proyecto personalizado de bordado en prendas. Elegí el tipo de prenda y el tamaño del bordado para obtener un precio estimado.</p>
-    </section>
+    <section id="productos" class="productos"></section>
 
-    <form id="simulador-form">
-      <label for="prenda">Tipo de prenda:</label>
-      <select id="prenda" required>
-        <option value="">Seleccionar</option>
-        <option value="camiseta">Camiseta</option>
-        <option value="buzo">Buzo</option>
-        <option value="campera">Campera</option>
-      </select>
-
-      <label for="tamano">Tamaño del bordado:</label>
-      <select id="tamano" required>
-        <option value="">Seleccionar</option>
-        <option value="pequeno">Pequeño</option>
-        <option value="mediano">Mediano</option>
-        <option value="grande">Grande</option>
-      </select>
-
-      <button type="submit">Calcular precio</button>
-    </form>
-
-    <section id="resultado"></section>
+    <aside class="carrito">
+      <h2>Carrito</h2>
+      <ul id="carrito-lista"></ul>
+      <p>Total: $<span id="total">0</span></p>
+      <button id="finalizar">Finalizar Compra</button>
+    </aside>
   </main>
 
-  <script src="js/app.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
+
+
